@@ -6,7 +6,7 @@ direction = input("Type 'encode' to encrpty, type 'decode' to decrept:\n")
 
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
-
+#encryption 
 def encrypt(plain_text, shift_amount):
     cipher_text = ""
     for letter in plain_text:
@@ -18,7 +18,7 @@ def encrypt(plain_text, shift_amount):
         else:
             cipher_text += letter
     print(f"The encoded text is {cipher_text}")
-
+#decryption 
 def decrypt(cipher_text, shift_amount):
     plain_text =""
     for letter in cipher_text:
